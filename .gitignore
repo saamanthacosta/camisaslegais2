@@ -3,6 +3,8 @@ nbproject/
 
 #Build files
 build/
+build.xml
+glassfish-web.xml
 
 # Compiled class file
 *.class
