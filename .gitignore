@@ -1,3 +1,9 @@
+#NetBeans Project Files
+nbproject/
+
+#Build files
+build/
+
 # Compiled class file
 *.class
 
