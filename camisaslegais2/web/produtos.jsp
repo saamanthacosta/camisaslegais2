@@ -10,15 +10,13 @@
     ArrayList<Produto> listarProdutos = (ArrayList<Produto>)request.getAttribute("listarProdutos");    
     ArrayList<Produto> listarAvaliados = (ArrayList<Produto>)request.getAttribute("listarAvaliados");
 
-    // A lista de usu?rios ? colocada no contexto da p?gina. Assim o JSTL ter? acesso a ela
     pageContext.setAttribute("listarProdutos", listarProdutos);
     pageContext.setAttribute("listarAvaliados", listarAvaliados);
 
     Pedido carrinho = (Pedido) request.getAttribute("carrinho");
-    // A lista de usu?rios ? colocada no contexto da p?gina. Assim o JSTL ter? acesso a ela
     pageContext.setAttribute("carrinho", carrinho);
 %>
-<html lang="zxx">
+<html>
     <head>
         <title>Camisas Legais</title>
         <meta charset="UTF-8">
@@ -68,9 +66,9 @@
                 </div>
             </div>
 	</section>
-	<!-- Product filter section end -->
+        
 	<jsp:include page="footer.jsp" />
-	<!--====== Javascripts & Jquery ======-->
+        
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
