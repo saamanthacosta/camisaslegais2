@@ -1,120 +1,169 @@
-* {
-    margin: 0px; 
-    padding: 0px; 
-    box-sizing: border-box;
+html,
+body {
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-body, html {
-    height: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111111;
+  font-weight: 600;
 }
 
-a {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+h1 {
+  font-size: 70px;
 }
 
-a:focus {
-    outline: none !important;
+h2 {
+  font-size: 36px;
 }
 
-a:hover {
-    text-decoration: none;
+h3 {
+  font-size: 30px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 0px;
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
+  font-size: 14px;
+  color: #585858;
+  line-height: 1.6;
 }
 
-ul, li {
-    margin: 0px;
-    list-style-type: none;
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #ec105a;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 5px 0;
+  margin: 0.2rem;
+}
+
+li {
+  padding: 0 10px;
 }
 
 input {
-    outline: none;
-    border: none;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-textarea {
   outline: none;
   border: none;
 }
 
-textarea:focus, input:focus {
-  border-color: transparent !important;
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+input:-moz-placeholder {
+  color: #adadad;
+}
+input::-moz-placeholder {
+  color: #adadad;
+}
+input:-ms-input-placeholder {
+  color: #adadad;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #adadad;
+}
+textarea:-moz-placeholder {
+  color: #adadad;
+}
+textarea::-moz-placeholder {
+  color: #adadad;
+}
+textarea:-ms-input-placeholder {
+  color: #adadad;
+}
 
 /*---------------------------------------------*/
 button {
-    outline: none !important;
-    border: none;
-    background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-    border: none !important;
+  border: none !important;
 }
-
-
-/*---------------------------------------------*/
-.container {
-    max-width: 1200px;
-}
-
-
-.bg0 {background-color: #fff;}
-.bg1 {background-color: #f7f7f7;}
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -126,7 +175,6 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #e6e6e6;
-  
 }
 
 .wrap-contact100 {
@@ -188,19 +236,16 @@ iframe {
   padding-right: 15px;
 }
 
-
 /*---------------------------------------------*/
 input.input100 {
   height: 40px;
 }
-
 
 textarea.input100 {
   min-height: 120px;
   padding-top: 9px;
   padding-bottom: 13px;
 }
-
 
 .input100:focus + .focus-input100::before {
   width: 100%;
@@ -253,7 +298,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #00ad5f;
+  background-color: #ec105a;
 }
 
 .contact100-form-btn:hover i {
@@ -271,7 +316,6 @@ textarea.input100 {
   .rs1-wrap-input100 {
     width: 100%;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -283,8 +327,6 @@ textarea.input100 {
     padding: 10px 10px 9px 10px;
   }
 }
-
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -367,7 +409,6 @@ textarea.input100 {
   }
 }
 
-
 .wrap-input100 {
   width: 100% !important;
 }
@@ -428,9 +469,9 @@ textarea.input100 {
   border-radius: 50%;
   border: 6px solid transparent;
   background: #00ad5f;
-  -moz-background-clip: padding;     
-  -webkit-background-clip: padding;  
-  background-clip: padding-box; 
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -439,13 +480,11 @@ textarea.input100 {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none;
-
 }
 
 .input-radio100:checked + .label-radio100::after {
   display: block;
 }
-
 
 /*==================================================================
 [ rs NoUI ]*/
